@@ -150,6 +150,10 @@ img {
   color: var(--logo-color);
 }
 
+.icons {
+  margin-right: 10px;
+}
+
 .logo-style {
   color: var(--accent-color);
 }
@@ -176,11 +180,16 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--secondary-color);
+  align-items: center;
 }
 
 .header-link .contacts-link:hover,
 .header-link .contacts-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-link:hover .icons {
+  fill: var(--accent-color);
 }
 
 /* Герой */
