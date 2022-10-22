@@ -199,7 +199,15 @@ img {
   text-align: center;
   background-color: #2f303a;
   max-width: 1600px;
+  height: 600px;
   margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -230,6 +238,9 @@ img {
   letter-spacing: 0.06em;
   color: var(--background-color);
   border: none;
+}
+
+.hero-wrap {
 }
 
 /* Переваги */
