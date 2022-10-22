@@ -253,8 +253,15 @@ img {
   display: flex;
 }
 
-.advantages-item {
+.advantages-background {
+  display: flex;
+  margin-bottom: 30px;
   width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages-list .advantages-item + .advantages-item {
