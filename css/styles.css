@@ -420,7 +420,6 @@ img {
 
 /* Підвал */
 .basement {
-  display: flex;
   background-color: #2f303a;
   padding: 60px 0px;
   align-items: baseline;
