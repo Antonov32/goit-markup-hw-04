@@ -351,6 +351,34 @@ img {
   color: var(--secondary-color);
 }
 
+.command-icons-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.command-icons-item {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.command-icons-link {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  fill: #afb1b8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.command-icons-item:hover .command-icons-link {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
 /* Підвал */
 .basement {
   background-color: #2f303a;
