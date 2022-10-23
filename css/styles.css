@@ -425,12 +425,19 @@ img {
   align-items: baseline;
 }
 
+.basement-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
 }
 
 .basement-link {
+  display: flex;
+  flex-direction: column;
 }
 
 .basement-logo {
