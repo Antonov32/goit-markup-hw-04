@@ -379,6 +379,32 @@ img {
   fill: #ffffff;
 }
 
+/* Постійні клієнти */
+
+.regular-title {
+  margin-bottom: 50px;
+}
+
+.regular-list {
+  display: flex;
+  gap: 30px;
+}
+
+.regular-item {
+  width: calc((100%-150px) / 6);
+  height: 92px;
+}
+
+.regular-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Підвал */
 .basement {
   background-color: #2f303a;
