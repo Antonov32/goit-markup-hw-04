@@ -403,6 +403,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #afb1b8;
+}
+
+.regular-link:hover {
+  fill: var(--accent-color);
 }
 
 /* Підвал */
