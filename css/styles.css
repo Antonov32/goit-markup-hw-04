@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --logo-color: #000000;
   --background-color: #ffffff;
+  --main-btn-color: #ffffff;
 }
 
 body {
@@ -109,6 +110,12 @@ img {
   margin: -1px;
 }
 
+.sprite {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* Шапка сайту */
 
 .header-navigation {
@@ -151,6 +158,7 @@ img {
 }
 
 .icons {
+  align-items: baseline;
   margin-right: 10px;
 }
 
@@ -412,8 +420,10 @@ img {
 
 /* Підвал */
 .basement {
+  display: flex;
   background-color: #2f303a;
   padding: 60px 0px;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -452,6 +462,44 @@ img {
 }
 
 .basement-tel {
+}
+
+.join-basement-icons {
+  margin-left: 70px;
+}
+.join-title {
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+.join-icons-list {
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+}
+
+.join-icons-item {
+}
+.join-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-btn-color);
+}
+
+.join-icons-sprite {
+}
+
+.join-icons-item:hover .join-icons-link {
+  background-color: var(--accent-color);
 }
 
 /* Portfolio.html */
