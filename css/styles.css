@@ -3,7 +3,10 @@
   --secondary-color: #757575;
   --accent-color: #2196f3;
   --logo-color: #000000;
+  --icon-color: #afb1b8;
   --background-color: #ffffff;
+  --background-hero-color: #2f303a;
+  --advantages-background-color: #f5f4fa;
   --main-btn-color: #ffffff;
 }
 
@@ -188,7 +191,9 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--secondary-color);
+  display: flex;
   align-items: center;
+  fill: var(--secondary-color);
 }
 
 .header-link .contacts-link:hover,
@@ -196,7 +201,8 @@ img {
   color: var(--accent-color);
 }
 
-.contacts-link:hover .icons {
+.contacts-link:hover,
+:focus .icons {
   fill: var(--accent-color);
 }
 
@@ -205,7 +211,7 @@ img {
 .hero {
   padding: 200px 0;
   text-align: center;
-  background-color: #2f303a;
+  background-color: var(--background-hero-color);
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -266,7 +272,7 @@ img {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--advantages-background);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -312,7 +318,7 @@ img {
 /* Наша команда */
 
 .command {
-  background-color: #f5f4fa;
+  background-color: var(--advantages-background-color);
 }
 
 .command-title {
@@ -374,17 +380,22 @@ img {
 .command-icons-link {
   width: 100%;
   height: 100%;
-  background: #ffffff;
-  fill: #afb1b8;
+  background: var(--background-color);
+  fill: var(--icon-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.command-icons-item:hover .command-icons-link {
+.command-icons-link:hover {
   background-color: var(--accent-color);
-  fill: #ffffff;
+  fill: var(--main-btn-color);
+}
+
+.command-icons-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--main-btn-color);
 }
 
 /* Постійні клієнти */
@@ -406,15 +417,16 @@ img {
 .regular-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 
-.regular-link:hover {
+.regular-link:hover,
+:focus {
   fill: var(--accent-color);
 }
 
