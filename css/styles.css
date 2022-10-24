@@ -5,7 +5,8 @@
   --logo-color: #000000;
   --icon-color: #afb1b8;
   --background-color: #ffffff;
-  --background-hero-color: #2f303a;
+  --background-secondary-color: #2f303a;
+  --background-portfolio-color: #ececec;
   --advantages-background-color: #f5f4fa;
   --main-btn-color: #ffffff;
 }
@@ -211,7 +212,7 @@ img {
 .hero {
   padding: 200px 0;
   text-align: center;
-  background-color: var(--background-hero-color);
+  background-color: var(--background-secondary-color);
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -428,11 +429,12 @@ img {
 .regular-link:hover,
 :focus {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* Підвал */
 .basement {
-  background-color: #2f303a;
+  background-color: var(--background-secondary-color);
   padding: 60px 0px;
   align-items: baseline;
 }
@@ -444,12 +446,12 @@ img {
 
 .logo-footer {
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .basement-link {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .basement-logo {
@@ -513,17 +515,18 @@ img {
   color: var(--main-btn-color);
 }
 
-.join-icons-sprite {
+.join-icons-link:hover {
+  background-color: var(--accent-color);
 }
 
-.join-icons-item:hover .join-icons-link {
+.join-icons-link:focus {
   background-color: var(--accent-color);
 }
 
 /* Portfolio.html */
 
 .header-portfolio {
-  background-color: #ececec;
+  background-color: var(--background-portfolio-color);
 }
 
 .projects-company {
