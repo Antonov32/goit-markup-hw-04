@@ -9,6 +9,7 @@
   --background-portfolio-color: #ececec;
   --advantages-background-color: #f5f4fa;
   --main-btn-color: #ffffff;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -273,7 +274,7 @@ img {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: var(--advantages-background);
+  background-color: var(--advantages-background-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -427,7 +428,7 @@ img {
 }
 
 .regular-link:hover,
-:focus {
+.regular-link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -504,6 +505,7 @@ img {
 
 .join-icons-item {
 }
+
 .join-icons-link {
   display: flex;
   justify-content: center;
@@ -602,7 +604,6 @@ img {
 
 .list-work-link {
   display: block;
-  text-decoration: none;
 }
 
 .list-work-link:hover,
@@ -622,9 +623,9 @@ img {
 
 .team-container {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .basement-contacts:hover,
