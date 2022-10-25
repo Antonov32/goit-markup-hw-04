@@ -515,10 +515,7 @@ img {
   color: var(--main-btn-color);
 }
 
-.join-icons-link:hover {
-  background-color: var(--accent-color);
-}
-
+.join-icons-link:hover,
 .join-icons-link:focus {
   background-color: var(--accent-color);
 }
@@ -526,7 +523,8 @@ img {
 /* Portfolio.html */
 
 .header-portfolio {
-  background-color: var(--background-portfolio-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--background-portfolio-color);
 }
 
 .projects-company {
@@ -564,6 +562,8 @@ img {
 .btn-projects:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .team-projects {
@@ -600,6 +600,17 @@ img {
   background-color: var(--background-color);
 }
 
+.list-work-link {
+  display: block;
+  text-decoration: none;
+}
+
+.list-work-link:hover,
+.list-work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .team-category {
   display: inline-block;
   margin: 0;
@@ -619,10 +630,4 @@ img {
 .basement-contacts:hover,
 .basement-contacts:focus {
   color: var(--accent-color);
-}
-
-.team-work:hover,
-.btn-projects:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
